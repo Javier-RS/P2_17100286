@@ -1,0 +1,128 @@
+= Resumen Primer Parcial
+Doc Writer <Javier Rodriguez Suarez>
+
+== Modelo de caja
+ el modelo de caja es la forma en la que se muestran todos los componentes de html en una caja.
+
+ El margin es la distancia desde el borde de un elemento hacia otro.
+
+ El padding es la distancia desde el borde hacia el contenido.
+
+ El Content se trata del contenido HTML del elemento.
+
+ EL Border es la línea que encierra completamente el contenido y su relleno.
+
+ EL Outline es similar al border pero no ocupa espacio ya que es sobre el elemento y adopta la forma del elemento.
+
+== Display
+
+  Es la forma de la estructura del elemento ya que cada elemento tiene un vlaor display
+
+  Inline sirve para contener algo sin interrumpir el flujo.
+
+
+  None sirve para ocultar un elemento.
+
+
+  Box se adapta en base al contenido donde llegue.
+
+  Inline-Box este es parecido a el inline pero este permite establecer una anchura y altura.
+
+== Box-Sizing
+
+  Calcula el ancho y alto de un elemento.
+
+  Content-Box toma el ancho y alto definido y luego se le agrega el tamaño de algun borde o relleno
+
+  Border-Box en este se toma toma los bordes y rellenos en cuenta al momento de definir el ancho o alto
+
+== Flujo del documento
+
+  Es el flujo que siguen los elementos dentro del lienzo que nos da el navegador.
+
+== Posicionamiento
+
+  La forma en que se colocan los elementos
+
+  Static los elementos estan de acuerdo al flujo del documento
+
+  Absolute este permite dejar los elementos de forma absoluta y aparte del flujo del documento
+
+  Relative este esta en el flujo y admite valores como top
+
+  Fixed este sirve para colocar un elemento de forma absoluta pero siempre fija
+
+  Sticky sirve para tener un elemento de forma absoluta y despues pasar a fixed
+
+== Unidades de medida
+
+  son las unidades que maneja css
+
+  Absolutas son un tipo de medida fija que no cambia, que no depende de ningún otro factor.
+
+  Relativas son un tipo de medida flexible dependen de algún otro factor.
+
+  - em se utiliza para hacer referencia al tamaño actual de la fuente del elemento en cuestión.
+
+  - rem permite establecer un tamaño para el documento en general
+
+  - Px estas toman medida en pixeles.
+
+== Selectores Basicos
+
+  - Selector Etiqueta este seleciona los elementos cuya etiqueta en html coincida con el valor del selector.
+
+  - Selector Descendiente Selecciona los elementos que se encuentran dentro de otros elementos.
+
+  - Selector de Clase  este selector define unos valores para los elementos en etiqueta  como el tamaño,margen etc.
+
+  - Selector de Id Sirve para selecionar un elemento unico y ponerle valores
+
+  - Selector de hijo el elemento tiene que ser hijo directo del elemento y no va más profundo
+
+  - selector adyacente da estilos al elemento que sea hermano de otro elemento, es decir, que los dos tengan el mismo padre.
+
+  - Selector General de Hermanos  toma encuenta a todos los hermanos.
+
+== PseudoSelectores
+
+  Hacen referencia a un elemento del documento pero sin existir en el marcado del mismo
+
+  ejemplos :
+
+  - visited: Se puede aplicar a hipervínculos, y se refiere al estado de vínculo ya visitado.
+  - hover:  se refiere al estado en que el usuario ha situado el puntero del ratón sobre él.
+  - active: se refiere al estado en el que el usuario hace clic sobre él.
+  - focus:  se refiere al estado del elemento cuando obtiene la atencion.
+
+== PseudoElementos
+
+  sirven para selecionar lo que normalmente no se podria como la primera linea de texto o cosas especificas
+
+  ejemplos:
+
+  - first-line permite seleccionar la primera línea de texto de un elemento.
+  - first-letter permite seleccionar la primera letra de la primera línea de texto de un elemento.
+  - before y after se utilizan para añadir contenidos antes o después del contenido original de un elemento.
+
+== Cascada
+
+La cascada es la que se encarga de eliminar la ambiguedad y determinar la prioridad de los elementos
+es la forma en la que el navegador resuelve problemas en las declaraciones.
+
+
+  - Origen: se determina dependiendo de donde se encuentren los estilos
+  - La especificidad : peso del mismo
+  - Orden : orden de declaracion
+
+
+== Especificidad
+
+  - la especificidad se refiere al valor que toma cada uno de los elementos de una hoja de estilo.
+
+  para calcular la especificidad Consiste en sumar los puntos totales de una sentencia CSS en base a los selectores o elementos de los que está compuesto.
+
+-  Se le da un valor de 1 punto a un elemento simple como una etiqueta
+-  Un selector de clase se le da el valor de 10 puntos
+-  Un selector de id se le da un valor de 100 puntos
+-  Los atributos de estilos se les da un valor de 1000 puntos.
